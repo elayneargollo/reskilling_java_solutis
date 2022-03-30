@@ -41,7 +41,7 @@ public final class Questoes {
 		Map<String, Set<Integer>> groupedByType = new HashMap<>();
 
 		groupedByType.put("Par", groupedNumbers.get(true));
-		groupedByType.put("ímpar", groupedNumbers.get(false));
+		groupedByType.put("Ã­mpar", groupedNumbers.get(false));
 
 		System.out.print(groupedByType);
 	}
@@ -62,8 +62,8 @@ public final class Questoes {
 	public static void Questao10() {
 		System.out.println("Quantidade de elemento: " + numbers.size());
 		System.out.println("Soma de seus elementos: " + numbers.stream().reduce(0, Integer::sum));
-		System.out.println("Média dos elementos: " + new DecimalFormat("#,##0.00")
-													.format(numbers.stream().mapToDouble(Integer::doubleValue).average().getAsDouble()));
+		System.out.println("MÃ©dia dos elementos: " + new DecimalFormat("#,##0.00")
+							    .format(numbers.stream().mapToDouble(Integer::doubleValue).average().getAsDouble()));
 		System.out.println("Quantidade de elemento: " + numbers.stream().max(Integer::compareTo).get());
 	}
 }
